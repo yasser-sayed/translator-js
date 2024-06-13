@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/bootstrap.min.css" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>translator</title>
+  </head>
+  <body
+    class="bg-secondary d-flex justify-content-center align-items-center vh-100 text-light"
+  >
+    <div
+      class="bg-black d-flex justify-content-center align-items-center flex-column p-3 rounded"
+    >
+      <h1 class="bg-primary p-1 rounded" style="--bs-bg-opacity: 0.3">
+        translator App
+      </h1>
+      <div class="sec d-flex gap-3">
+        <div
+          class="send d-flex flex-column justify-content-center align-items-center gap-3"
+        >
+          <textarea
+            class="firInp bg-secondary rounded text-light"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <select
+            name=""
+            id=""
+            class="sel1 bg-dark rounded pe-4 text-light"
+          ></select>
+        </div>
+        <div
+          class="res d-flex flex-column justify-content-center align-items-center gap-3"
+        >
+          <textarea
+            class="secInp bg-dark rounded text-light"
+            disabled
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <select
+            name=""
+            id=""
+            class="sel2 bg-dark rounded pe-4 text-light"
+          ></select>
+        </div>
+      </div>
+      <button class="btn btn-outline-primary">translate</button>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/countries.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
